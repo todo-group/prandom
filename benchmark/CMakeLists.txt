@@ -1,0 +1,5 @@
+set(PROGS baseline incorrect critical parallel0 parallel1 parallel2 parallel3 parallel parallel_64)
+foreach(name ${PROGS})
+  add_executable(${name} ${name}.cpp)
+  target_link_libraries(${name})
+endforeach(name)
